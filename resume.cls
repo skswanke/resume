@@ -99,7 +99,7 @@
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
+    \setlength{\leftmargin}{1.0em} % Margin within the section
   }
   \item[]
 }{
@@ -117,7 +117,7 @@
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \itemsep -0.3em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
@@ -127,5 +127,5 @@
 \def\namesize{\huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
-\def\nameskip{\bigskip} % The space after your name at the top
-\def\sectionskip{\smallskip} % The space after the heading section
+\def\nameskip{\smallskip} % The space after your name at the top
+\def\sectionskip{\medskip} % The space after the heading section
