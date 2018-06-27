@@ -1,0 +1,53 @@
+Experience:
+
+Dealer.com
+Jul 2017 - Present
+Software Engineer
+Burlington, VT
+Created graph traversal library to canonicalize messy user data
+Led development of maintainable front-end applications with React & Webpack
+Educated team by giving talks on React as the front-end specialist
+Used Terraform to replicate on-premise applications and databases into AWS
+
+Dealer.com
+May 2016 - May 2017
+Software Engineering Intern
+Burlington, VT
+Maintained & enhanced existing Java & Angular applications
+Mentored by team members in peer reviewing code, continuous integration & unit testing
+
+Cosechando Felicidad Inc
+Aug 2015 - Present
+Front-end Developer
+Williston, VT
+Sole Developer for Harvestinghappiness.org, a non-profit operating Guatemala
+Developed website using Bootstrap, HTML and JavaScript, hosted on Github Pages
+Volunteered 4 weeks in Guatemala, building stoves, delivering medicine, and helping the non-profit
+
+Intersil Corporation
+May 2015 - Aug 2015
+Web Development Intern
+Palm Bay, FL
+Redesigned legacy Google Search Appliance XSLT using modern web standards
+Developed responsive web pages in HTML, JavaScript, Bootstrap and CSS
+
+University of Vermont, College of Engineering
+Oct 2014 - May 2016
+Web Developer
+Burlington, VT
+Enabled automated QA by writing a multithreaded Python web crawler which posts to Slack
+Created a weather web app using React and the OpenWeather API to display current weather
+Developed web pages using HTML, CSS, JavaScript and PHP
+
+Tufts University Hackathon
+Oct 2014
+Team Member
+Medford, MA
+Worked in a team of four to create a game of Snake on city streets using the Google Maps API
+
+Education:
+
+University of Vermont
+May 2017
+Bachelor of Science in Computer Science
+Minor in Mathematics
