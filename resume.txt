@@ -1,7 +1,12 @@
 Experience:
 
+CALA
+Aug 2018 - Present
+Software Engineer
+New York, NY
+
 Dealer.com
-Jul 2017 - Present
+Jul 2017 - Aug 2018
 Software Engineer
 Burlington, VT
 Created graph traversal library to canonicalize messy user data
