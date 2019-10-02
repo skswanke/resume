@@ -4,6 +4,10 @@ CALA
 Aug 2018 - Present
 Software Engineer
 New York, NY
+Engineer \#2, helped grow the team to 4 engineers
+Led development on large scaleable systems in TypeScript with NodeJS, React \& Redux
+Worked closely with a small team to build a realtime collaborative design tool
+Created industry leading fashion production timeline tracking \& management software
 
 Dealer.com
 Jul 2017 - Aug 2018
