@@ -24,6 +24,14 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
+% \usepackage[T1]{fontenc}
+% \usepackage[usefilenames,RMstyle=Light,SSstyle=Light,TTstyle=Light,DefaultFeatures={Ligatures=Common}]{plex-otf} %
+% \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage[sfdefault,ultralight]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+
 \name{Samuel Swanke}
 \address{(802)$\cdot$922$\cdot$0377 \\ skswanke@gmail.com \\ samswanke.com}
 
@@ -36,52 +44,81 @@
 \begin{rSection}{Experience}
 
 %------------------------------------------------
+%FEATHER
+
+\begin{rSubsection}{Feather}{Dec 2019 - Present}{Senior Software Engineer}{New York, NY}
+
+Led and created an internal service tool to manage trip and operational logistics.
+Collaborated with design stakeholders to componentize the design system for the eCommerce
+site, LiveFeather.com. Maintained a flexible React code library and drove site efficiencies.
+Established the foundational pillars for the company’s headless CMS. Adjusted code to render
+images 30\% faster, resulting in faster load-time for users. Mentored junior team members to
+drive the company’s mission: to encourage furniture rental, reuse, and refurbishment. Code
+and digital product development ultimately contributed to keeping furniture out of landfills
+and promoted the circular economy for home furniture rentals.
+
+\end{rSubsection}
+
+%------------------------------------------------
 %CALA
 
-\begin{rSubsection}{CALA}{Aug 2018 - Present}{Full-Stack Software Engineer}{New York, NY}
-    \item Engineer \#2, helped grow the team to 4 engineers
-    \item Led development on scaleable systems in TypeScript with NodeJS, React \& Redux
-    \item Worked closely with designers and non-technical teams to create a product experience that delights
-    \item Created industry leading fashion production timeline tracking \& management software
+\begin{rSubsection}{CALA}{Aug 2018 - Dec 2019}{Full-Stack Software Engineer}{New York, NY}
+
+Ignited the fashion-tech company by being brought-in as engineer \#2. During tenure, grew
+the team to 4 engineers. Built a digital platform that made it easy to design, produce,
+and deliver custom fashion products. Led development on scalable systems in TypeScript with
+NodeJS, React and Redux. Partnered with designers and non-technical teams to create a
+delightful digital-product experience. Created industry leading fashion management software
+that is used for generating production timeline tracking.
+
 \end{rSubsection}
 
 %------------------------------------------------
 %DEALER
 
 \begin{rSubsection}{Dealer.com}{Jul 2017 - Aug 2018}{Software Engineer}{Burlington, VT}
-    \item Created graph traversal library to canonicalize messy user data
-    \item Led development of maintainable front-end applications with React \& Webpack
-    \item Migrated on-premise applications and databases into AWS using Terraform
-    \item Educated team by giving talks on React as the front-end specialist
+
+Created graph traversal library to canonicalize messy user data. Led development of
+maintainable front-end applications with React \& Webpack. Educated team by giving talks
+on React, as the front-end specialist. Grew the company’s mission to be the premier
+digital marketing solution and partner within the automotive industry. Leveraged
+advanced digital technology and data for projects.
+
 \end{rSubsection}
 
 \begin{sSubsection}{Software Engineering Intern}{May 2016 - May 2017}
-    \item Maintained \& enhanced existing Java \& Angular applications
-    \item Mentored by team members in peer reviewing code, continuous integration \& unit testing
+
+Maintained \& enhanced existing Java \& Angular applications.
+
 \end{sSubsection}
 
 %------------------------------------------------
 %COSECHANDO FELICIDAD
 
-\begin{rSubsection}{Cosechando Felicidad Inc}{Aug 2015 - Present}{Front-end Developer}{Williston, VT}
-    \item Sole Developer for Harvestinghappiness.org, a non-profit operating Guatemala
-    \item Volunteered 4 weeks in Guatemala, building stoves, delivering medicine, and helping the non-profit
+\begin{rSubsection}{Cosechando Felicidad Inc}{Aug 2015 - Present}{Front-End Developer}{Williston, VT}
+
+Sole Developer for HarvestingHappiness.org, a non-profit serving vulnerable community members.
+Volunteered for 4 weeks in Guatemala to build stoves and deliver medicine.
+
 \end{rSubsection}
 
 %------------------------------------------------
 %INTERSIL
 
 \begin{rSubsection}{Intersil Corporation}{Summer 2015}{Web Development Intern}{Palm Bay, FL}
-    \item Redesigned legacy Google Search Appliance XSLT using modern web standards
-    \item Developed responsive web pages in HTML, JavaScript, Bootstrap and CSS
+
+Re-designed legacy Google Search Appliance XSLT using modern web standards.
+
 \end{rSubsection}
 
 %------------------------------------------------
 %UVM
 
-\begin{rSubsection}{University of Vermont, College of Engineering}{Oct 2014 - May 2016}{Web Developer}{Burlington, VT}
-    \item Enabled automated QA by writing a multithreaded Python web crawler integrated with Slack
-    \item Created a weather web app using React and the OpenWeather API to display current weather 
+\begin{rSubsection}{University of Vermont}{Oct 2014 - May 2016}{Web Developer}{Burlington, VT}
+
+Within the College of Engineering, enabled automated QA by writing a multithreaded Python web
+crawler integrated with Slack.
+
 \end{rSubsection}
 
 \end{rSection}
@@ -92,9 +129,8 @@
 
 \begin{rSection}{Education}
 
-{\bf University of Vermont} \hfill {May 2017} \\ 
-Bachelor of Science in Computer Science \\
-Minor in Mathematics
+{\bf University of Vermont} \hfill {May 2017} \\
+Bachelor of Science in Computer Science \& Minor in Mathematics
 
 \end{rSection}
 
@@ -104,7 +140,7 @@ Minor in Mathematics
 
 \begin{rSection}{Technical Strengths}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
 Programming Languages & JavaScript, Java, Python, C/C++ \\
 Frameworks            & React, Redux, NodeJS, Terraform, Spring \\
 Databases             & PostgreSQL, MySQL, DynamoDB  \\

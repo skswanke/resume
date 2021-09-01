@@ -25,6 +25,10 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{MYBLUE}{RGB}{37, 72, 131}
+\definecolor{MYGREY}{RGB}{102, 102, 102}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -35,7 +39,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\diamond$} % Set default address separator to a diamond
+\def \addressSep {{\color{MYBLUE}$\diamond$}} % Set default address separator to a diamond
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -67,7 +71,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{\textcolor{MYBLUE}{\MakeUppercase{\namesize\bf \@name}}}\hfil
     \nameskip\break
   \endgroup
 }
@@ -95,11 +99,13 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \MakeUppercase{\bf #1} % Section title
+  \textcolor{MYBLUE}{\large\MakeUppercase{\bf #1}} % Section title
   \sectionlineskip
+  \vspace{0.1em}
   \hrule % Horizontal line
+  \vspace{0.2em} % Some space after the list of bullet points
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.0em} % Margin within the section
+    \setlength{\leftmargin}{0em} % Margin within the section
   }
   \item[]
 }{
@@ -111,26 +117,22 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.3em \vspace{-0.5em} % Compress items in list together for aesthetics
+ {\large\bf #1} \hspace{1mm}{\textcolor{MYGREY}{\large\bf #3}} \hfill {\small{#2}} \hspace{3mm}{\small{#4}} % Bold company name and date on the right
+  \vspace{-3em}
+  \begin{paragraph}{}{\noindent\nolinebreak\nopagebreak} % \cdot used for bullets, no indentation
   }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \end{paragraph}
+  \vspace{0.3em} % Some space after the list of bullet points
 }
-\newenvironment{sSubsection}[2]{ % 4 input arguments - company name, year(s) employed, job title and location
-  \vspace{-0.5em} % Some space after the list of bullet points
- {\em #1} \hfill {#2} % Bold company name and date on the right
-  \smallskip
-  \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.3em \vspace{-0.5em} % Compress items in list together for aesthetics
+
+\newenvironment{sSubsection}[2]{ % 2 input arguments -  job title and year(s) employed
+  \vspace{0em} % Some space after the previous position
+ {\textcolor{MYGREY}{\large\bf #1}} \hfill {\small{#2}} % Bold company name and date on the right
+  \vspace{-3em}
+  \begin{paragraph}{}{\noindent\nolinebreak\nopagebreak} % \cdot used for bullets, no indentation
   }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \end{paragraph}
+  \vspace{0.3em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
