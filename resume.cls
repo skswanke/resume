@@ -125,9 +125,9 @@
   \vspace{0.3em} % Some space after the list of bullet points
 }
 
-\newenvironment{sSubsection}[2]{ % 2 input arguments -  job title and year(s) employed
+\newenvironment{sSubsection}[3]{ % 3 input arguments -  job title and year(s) employed
   \vspace{0em} % Some space after the previous position
- {\textcolor{MYGREY}{\large\bf #1}} \hfill {\small{#2}} % Bold company name and date on the right
+ {\textcolor{MYGREY}{\large\bf #1}} \hfill {\small{\textcolor{MYGREY}{#2}}} \hspace {3mm}{\small{\textcolor{MYGREY}{#3}}}% Bold company name and date on the right
   \vspace{-3em}
   \begin{paragraph}{}{\noindent\nolinebreak\nopagebreak} % \cdot used for bullets, no indentation
   }{
