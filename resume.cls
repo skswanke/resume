@@ -117,7 +117,7 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\large\bf #1} \hspace{1mm}{\textcolor{MYGREY}{\large\bf #3}} \hfill {\small{\textcolor{MYGREY}{#2}}} \hspace{3mm}{\small{\textcolor{MYGREY}{#4}}} % Bold company name and date on the right
+ {\large\bf #1} \hspace{1mm}{\textcolor{MYGREY}{\large\bf #3}} \hfill {\small{{#2}}} \hspace{3mm}{\small{{#4}}} % Bold company name and date on the right
   \vspace{-3em}
   \begin{paragraph}{}{\noindent\nolinebreak\nopagebreak} % \cdot used for bullets, no indentation
   }{

@@ -28,10 +28,21 @@
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 
-\name{Samuel Swanke}
-\address{skswanke@gmail.com \\ samswanke.com}
+\name{Sam Swanke}
+\address{skswanke@gmail.com \textcolor{MYBLUE}{\textbullet} samswanke.com}
+\address{New York, NY}
 
 \begin{document}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+
+Engineering leader with Amazon and startup CTO experience. At Amazon, delivered platforms enabling nine-figure insurance contracts and supporting hundreds of nonprofit partners processing tens of thousands of annual cases. As CTO, led a zero-downtime AWS migration while contributing significant code — dramatically improving API performance and operational stability. Deeply invested in growing engineers: coached multiple promotions at Amazon, developed a non-technical hire into an effective engineer, and retained the entire team through a demanding rebuild. Combines distributed systems depth with a leadership style that elevates people and ships results.
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -42,106 +53,91 @@
 %------------------------------------------------
 % HelloPrenup
 
-\begin{rSubsection}{HelloPrenup}{Dec 2024 - Present}{Chief Technology Officer}{New York, NY}
+\begin{rSubsection}{HelloPrenup}{Dec 2024 -- Present}{Chief Technology Officer}{New York, NY}
 
-As Chief Technology Officer at HelloPrenup, I balance hands-on technical leadership with building and scaling a high-performing engineering team from 1 to 5 engineers. I architected and led the migration from a no-code platform to a distributed microservices architecture on AWS, designing scalable RESTful web services with flexible ORM layers that handle over 6 million production requests with ~130ms average response times and zero outages post-launch. I established comprehensive CI/CD pipelines with automated testing practices, driving significant improvements in code quality and deployment velocity while maintaining production reliability. As both technical leader and people manager, I mentor engineers through code reviews, debugging sessions, and career development conversations, creating a culture focused on technical excellence, ownership, and continuous learning. I designed reusable infrastructure-as-code components and frameworks that provide leverage across the platform, implementing object-oriented design patterns that enable maintainability and extensibility as business requirements evolve. Working closely with cross-functional partners including legal, customer success, and operations teams, I navigate ambiguous requirements and provide clear technical direction while balancing long-term architectural vision with immediate business needs. I built robust monitoring and observability systems to support production operations, established agile sprint planning processes with clear prioritization frameworks, and created comprehensive engineering SOPs that define workflows, escalation paths, and quality standards. My technical judgment and ability to make pragmatic engineering decisions while scaling both systems and teams have positioned HelloPrenup's platform for sustainable growth, transforming engineering from a bottleneck into a predictable, high-velocity organization capable of supporting the company's ambitious growth targets.
+Built and led the engineering team at an early-stage (20 person) legal technology company, owning hiring, architecture, and delivery of customer-facing distributed systems.
+
+\begin{itemize}
+  \item Built the engineering organization from zero, hiring and onboarding 4 engineers; \textbf{retained 100\%} of the team through a high-pressure 9-month platform rebuild.
+  \item Owned the full hiring funnel, sourcing and screening from 300+ candidates across phone, technical, and onsite rounds hiring top talent within tight budget constraints.
+  \item Coached a non-technical employee into an effective junior engineer on track to reach mid-level; created performance guidelines and calibrated each engineer against clear expectations.
+  \item Reduced new-hire time-to-productivity to \textbf{2 weeks} through structured onboarding and comprehensive system documentation, even during a full platform rebuild.
+  \item Led migration from a monolithic no-code platform to a stateless, horizontally scalable AWS architecture; executed \textbf{zero-downtime cutover} while maintaining uninterrupted customer service for 5-10k monthly active users.
+  \item Delivered production launch handling \textbf{8M+ monthly requests} with 130ms average response times; contributed 30\% of code changes while establishing durable architectural patterns.
+  \item Reduced customer support tickets by \textbf{44\%}, improved page load times by \textbf{61\%}, and reduced API response times by \textbf{91\%} through architectural and performance improvements.
+\end{itemize}
 
 \end{rSubsection}
 
 %------------------------------------------------
 % AMAZON
 
-\begin{rSubsection}{Amazon}{May 2022 - Present}{Software Development Manager}{New York, NY}
+\begin{rSubsection}{Amazon}{May 2022 -- Dec 2024}{Software Development Manager}{New York, NY}
 
-As a Software Development Manager at Amazon, I lead a team of 5 Engineers, driving innovation and operational excellence in large-scale, complex AWS full-stack applications. I played a pivotal role in designing and implementing Amazon Bridge, an application supporting the Amazon Community Together program, automating workflows with AWS Step Functions, serverless infrastructure, and React-based front-end systems. Under my leadership, the application delivered critical features, scaled to {\bf support 750+ charities and 30,000+ annual cases}, and enhanced user experience with intuitive, responsive UX standards. I transitioned seamlessly into the managerial role by earning trust through hands-on contributions, and mentorship. With over 400+ code reviews, driving unit test coverage from 5\% to 40\%, and {\bf reducing weekly on-call tickets by over 50\%}. I have successfully coached team members through promotions, championed design/code reviews, and implemented mechanisms to improve team growth and delivery quality. Additionally, I led the handover and successful launch of InsurGuide within 4 weeks, driving technical handoff, risk mitigation, and prioritization of mission-critical tasks, while ensuring production readiness through metrics and monitoring systems, InsurGuide saw the procurement of over nine figures in  insurance contracts. My ability to manage ambiguity, influence technical and product strategies, and foster customer-centric solutions reflects my experience delivering exceptional products and building high-performing engineering teams. 
+Led a team of 8 (5 direct-report SDEs, 1 Sr. SDE, 1 PM-T, 1 TPM) building large-scale, highly reliable internal platforms for Amazon Treasury's Global Risk Management \& Claims organization, partnering with product, finance and claims teams.
+
+\begin{itemize}
+  \item Took ownership of a mission-critical insurance request platform \textbf{4 weeks before launch} following external vendor (ProServe) handoff; drove cutover plan, reprioritized scope, and delivered a stable production launch.
+  \item Led structured handover deep-dive: triaged 65 issues, delivered \textbf{47 launch-critical fixes}, including 33 bugs, 9 data-integrity gaps, and 5 configuration defects prior to go-live.
+  \item Enabled procurement workflows supporting \textbf{nine-figure} insurance contracts by delivering a reliable, auditable system under aggressive deadlines.
+  \item Designed and launched distributed case-management workflows supporting \textbf{over 750} nonprofit partners and \textbf{~30,000} annual cases, using AWS-native services and event-driven orchestration.
+  \item Improved engineering quality and operational readiness: raised unit test coverage from \textbf{~5\% → 40\%}, introduced production readiness gates, and strengthened monitoring/alerting to reduce regressions.
+  \item Reduced weekly on-call incidents by \textbf{~50\%} through improved test strategy, better operational processes, and targeted architectural simplification.
+  \item Managed and mentored 5 engineers; coached \textbf{2} engineers through successful \textbf{L4→L5} promotions and expanded ownership across system areas.
+  \item Navigated shifting org priorities (including deprioritization of a flagship product) while maintaining team morale, delivery predictability, and customer trust.
+\end{itemize}
 
 \end{rSubsection}
-\begin{rSubsection}{Amazon}{Aug 2021 - May 2022}{SDE II}{New York, NY}
+\begin{rSubsection}{Amazon}{Aug 2021 -- May 2022}{Software Development Engineer II}{New York, NY}
 
-Led in the design, implementation and deployment of the large-scale application, Amazon Bridge. 
-Designed services using {\bf cutting edge AWS serverless architecture}. Lead front-end development on 
-the team, introducing code quality patterns such as typescript, redux and component design. 
-Learned and established best practices for DynamoDB table design. Created critical step 
-function workflows for the application. Earned trust on the team and became known for being a 
-mentor and mediator, which opened the opportunity to take on management responsibility.
+\begin{itemize}
+  \item Led architecture and implementation of a greenfield distributed service using AWS-native infrastructure, designing scalable data models and workflows for complex business processes.
+  \item Served as front-end technical lead and mentor, carved a pathway to promotion into engineering management.
+\end{itemize}
 
 \end{rSubsection}
 
 %------------------------------------------------
 % FEATHER
 
-\begin{rSubsection}{Feather}{Dec 2019 - Present}{Senior Software Engineer}{New York, NY}
+\begin{rSubsection}{Feather}{Dec 2019 -- Jul 2021}{Senior Software Engineer}{New York, NY}
 
-Led and created an internal service tool to manage trip and operational logistics.
-Collaborated with design stakeholders to componentize the design system for the eCommerce
-site, LiveFeather.com. Maintained a flexible React code library and drove site efficiencies.
-Established the foundational pillars for the company’s headless CMS. Adjusted code to {\bf render
-images 30\% faster}, resulting in faster load-time for users. Mentored junior team members to
-drive the company’s mission: to encourage furniture rental, reuse, and refurbishment. Code
-and digital product development ultimately contributed to keeping furniture out of landfills
-and promoted the circular economy for home furniture rentals.
+\begin{itemize}
+  \item Led development of internal tools streamlining operational workflows and reducing manual overhead. Improved site performance through frontend optimizations, which reduced load times by \textbf{30\%}.
+\end{itemize}
 
 \end{rSubsection}
 
 %------------------------------------------------
 % CALA
 
-\begin{rSubsection}{CALA}{Aug 2018 - Dec 2019}{Full-Stack Software Engineer}{New York, NY}
+\begin{rSubsection}{CALA}{Aug 2018 -- Nov 2019}{Software Engineer}{New York, NY}
 
-Ignited the fashion-tech company by being brought-in as engineer \#2. During tenure, grew
-the team to 4 engineers. Built a digital platform that made it easy to design, produce,
-and deliver custom fashion products. Led development on scalable systems in TypeScript with
-NodeJS, React and Redux. Partnered with designers and non-technical teams to create a
-delightful digital-product experience. Created industry leading fashion management software
-that is used for generating production timeline tracking.
+\begin{itemize}
+  \item Engineer \#2 at a fashion technology startup; helped scale the engineering team and build core platform features supporting product design, production tracking, and fulfillment.
+\end{itemize}
 
 \end{rSubsection}
 
 %------------------------------------------------
 % DEALER
 
-\begin{rSubsection}{Dealer.com}{Jul 2017 - Aug 2018}{Software Engineer}{Burlington, VT}
+\begin{rSubsection}{Dealer.com}{May 2016 -- Aug 2018}{Software Engineer / Intern}{Burlington, VT}
 
-Created graph traversal library to canonicalize messy user data. Led development of
-maintainable front-end applications with React \& Webpack. Educated team by giving talks
-on React, as the front-end specialist. Grew the company’s mission to be the premier
-digital marketing solution and partner within the automotive industry. Leveraged
-advanced digital technology and data for projects.
-
-\end{rSubsection}
-
-\begin{rSubsection}{Dealer.com}{May 2016 - May 2017}{Software Engineering Intern}{Burlington, VT}
-
-Maintained \& enhanced existing Java \& Angular applications.
+\begin{itemize}
+  \item Built data-processing libraries to canonicalize large-scale customer data and developed maintainable frontend applications in Java and Angular. Shared modern frontend best practices through internal technical talks.
+\end{itemize}
 
 \end{rSubsection}
 
 %------------------------------------------------
 % COSECHANDO FELICIDAD
 
-\begin{rSubsection}{Cosechando Felicidad Inc}{Aug 2015 - Present}{Front-End Developer}{Williston, VT}
+\begin{rSubsection}{Cosechando Felicidad Inc}{Aug 2015 -- Present}{Front-End Engineer (Volunteer)}{Remote}
 
-Sole Developer for HarvestingHappiness.org, a non-profit serving vulnerable community members.
-Volunteered for 4 weeks in Guatemala to build stoves and deliver medicine.
-
-\end{rSubsection}
-
-%------------------------------------------------
-% INTERSIL
-
-\begin{rSubsection}{Intersil Corporation}{Summer 2015}{Web Development Intern}{Palm Bay, FL}
-
-Re-designed legacy Google Search Appliance XSLT using modern web standards.
-
-\end{rSubsection}
-
-%------------------------------------------------
-% UVM
-
-\begin{rSubsection}{University of Vermont}{Oct 2014 - May 2016}{Web Developer}{Burlington, VT}
-
-Within the College of Engineering, enabled automated QA by writing a multithreaded Python web
-crawler integrated with Slack.
+\begin{itemize}
+  \item Sole developer for HarvestingHappiness.org, supporting a nonprofit serving vulnerable communities through long-term volunteer engagement.
+\end{itemize}
 
 \end{rSubsection}
 
@@ -153,8 +149,9 @@ crawler integrated with Slack.
 
 \begin{rSection}{Education}
 
-{\bf University of Vermont} \hfill {May 2017} \\
-Bachelor of Science in Computer Science \& Minor in Mathematics
+{\bf University of Vermont} \\
+Bachelor of Science in Computer Science, 
+Minor in Mathematics \hfill {May 2017}
 
 \end{rSection}
 
@@ -164,11 +161,13 @@ Bachelor of Science in Computer Science \& Minor in Mathematics
 
 \begin{rSection}{Technical Strengths}
 
-\begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
-Programming Languages & JavaScript, Java, Python, C/C++ \\
-Frameworks            & React, Redux, NodeJS, Terraform, Spring \\
-Databases             & PostgreSQL, MySQL, DynamoDB  \\
-\end{tabular}
+\begin{itemize}
+  \item \textbf{Engineering Leadership:} Incident management, on-call operations, hiring and onboarding, performance management, delivery planning, architecture and design
+  \item \textbf{Infrastructure:} AWS (compute, storage, messaging, observability), CI/CD, infrastructure as code
+  \item \textbf{Languages:} TypeScript / JavaScript, Java, Python, C++
+  \item \textbf{Systems \& Frameworks:} React, Node.js, API design, distributed systems
+  \item \textbf{Data:} PostgreSQL, MySQL, DynamoDB
+\end{itemize}
 
 \end{rSection}
 
