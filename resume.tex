@@ -26,6 +26,8 @@
 
 \usepackage[sfdefault,extralight]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0.1em, topsep=0.25em, parsep=0pt, partopsep=0pt}
 \renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 
 \name{Sam Swanke}
@@ -59,8 +61,9 @@ Built and led engineering at a growth-stage legal technology company generating 
 
 \begin{itemize}
   \item Built the engineering organization from zero, hiring and onboarding 4 engineers and maintaining \textbf{100\% team retention} through a high-pressure platform rebuild and second-product launch.
-  \item Launched Postnup.com on schedule with a lean team, using secure \textbf{AI-assisted development workflows} to increase engineering throughput while maintaining code quality and operational reliability.
-  \item Oversaw implementation of AI-assisted attorney tooling that improved attorney review times and increased operational leverage while preserving human oversight.
+  \item Recovered an at-risk Postnup.com initiative and launched on schedule with a lean 3-person engineering team, using disciplined scope reduction, secure AI-assisted development, and staged UAT and rollout to deliver and stabilize a new consumer legal platform.
+  \item Evolved the platform into reusable services and application components supporting multiple consumer legal products, reducing duplicated implementation across authentication, customer workflows, attorney operations, and shared infrastructure.
+  \item Oversaw implementation of AI-assisted attorney tooling that improved attorney review times and increased operational leverage while preserving human oversight and controls for sensitive legal data.
   \item Established the security and governance foundation for \textbf{AI-enabled legal workflows}, proactively managing emerging risks as the company expanded its use of AI.
   \item Led a \textbf{zero-downtime migration} from a monolithic no-code platform to a stateless, horizontally scalable AWS architecture supporting 5--10K monthly active users and \textbf{12M+ monthly requests}, achieving \textbf{30ms average API latency and 130ms p99 latency}; contributed 30\% of production code changes.
   \item Reduced customer support tickets by \textbf{44\%} and page-load times by \textbf{61\%} through architectural, reliability, and user-experience improvements.
